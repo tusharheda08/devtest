@@ -1,0 +1,9 @@
+# use a node base image
+FROM openjdk:8
+
+# set maintainer
+LABEL maintainer "tusharheda08@gmail.com"
+
+ADD target/devopsTest-0.0.1-SNAPSHOT.jar devopsTest-0.0.1-SNAPSHOT.jar
+EXPOSE 8090
+ENTRYPOINT ["java","-jar","devopsTest-0.0.1-SNAPSHOT.jar"]
