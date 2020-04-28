@@ -1,5 +1,5 @@
 # use a node base image
-FROM openjdk
+FROM tomcat:latest
 
 # set maintainer
 MAINTAINER Tushar Heda <tusharheda08@gmail.com>
